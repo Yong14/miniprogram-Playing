@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/msgs/msgs",
+    "pages/mine/mine",
+    "pages/store/store",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱玩",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor":"#23ADE5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"./img/首页.png",
+        "selectedIconPath":"./img/首页色.png"
+      },
+      {
+        "pagePath": "pages/msgs/msgs",
+        "text": "消息",
+        "iconPath":"./img/消息.png",
+        "selectedIconPath":"./img/消息色.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人",
+        "iconPath":"./img/个人.png",
+        "selectedIconPath":"./img/个人色.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+<view class="content">
+  <swiper class="swiper" autoplay circular interval='2000'>
+    <swiper-item class="swiper-item" wx:for="{{detail.images}}" wx:key="{{index}}">
+      <image bindtap="preview" data-img="{{item}}" class="swiper-img" src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+
+  <storeDesc data="{{detail}}"></storeDesc>
+
+  <view class="comments">
+    <view class="comment-item" wx:for="{{detail.comments}}" wx:key="{{index}}">
+        <view class="user">
+            <view class="user-name">{{item.name}}</view>
+            <view class="time">{{item.date}}<text>{{item.rating}}</text></view>
+        </view>
+        <view class="comtent">{{item.content}}</view>
+        <scroll-view scroll-x class="comtent-img" wx:if="{{item.images[0]}}">
+          <image bindtap="previewimg" data-index="{{index}}" data-img="{{imgItem}}" src="{{util.size(imgItem)}}" wx:key="imgIdx" wx:for="{{item.images}}" wx:for-item="imgItem" wx:for-index="imgIdx">
+
+          </image>
+        </scroll-view>
+    </view>
+  </view>
+
+</view>
+
+<wxs module='util'>
+  module.exports = {
+    size:function(input){
+      return input.replace('w.h','100.100');
+    }
+  }
+
+</wxs>
+

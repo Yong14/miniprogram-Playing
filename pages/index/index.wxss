@@ -1,0 +1,33 @@
+/* 轮播图 */
+.swiperImg{
+    width: 100%;
+    height: 300rpx;
+}
+.swiper-item{
+    width: 100%;
+    height: 100%;
+}
+.swiper-img{
+    width: 100%;
+}
+/* 九宫格 */
+.sudoku{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sudoku-item{
+    display: flex;
+    flex-direction: column;
+    width: 33.333%;
+    height: 250rpx;
+    justify-content: center;
+    align-items: center;
+}
+.sudoku-image{
+    width: 60rpx;
+    height: 60rpx;
+    margin-bottom: 2px;
+}
+.sudoku-text{
+    font-size: 30rpx;
+}

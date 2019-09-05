@@ -1,0 +1,16 @@
+<view class="store">
+  <navigator url="/pages/detail/detail?id={{item.id}}" class="store-item" wx:for="{{store}}" wx:key="{{item.id}}">
+    <image class="item-img" src="{{item.images[0]}}"></image>
+    <view class="item-desc">
+      <view class="item-nm">{{item.name}}</view>
+      <view class="item-sc">电话：{{item.phone}}</view>
+      <view class="item-sc">地址：{{item.address}}</view>
+      <view class="item-sc">营业时间：{{item.businessHours}}</view>
+    </view>
+  </navigator>
+  <view class="loading"> 
+    {{loading}}
+  </view>
+</view>
+
+

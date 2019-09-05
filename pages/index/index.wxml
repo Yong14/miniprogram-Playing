@@ -1,0 +1,17 @@
+<!-- 轮播图 -->
+<swiper autoplay indicator-dots interval="2000" circular class="swiperImg">
+  <swiper-item class="swiper-item" wx:for="{{swiperImg}}" wx:key="{{index}}">
+    <image mode="widthFix" class="swiper-img" mode="widthFix" src="{{item.image}}">
+    </image>
+  </swiper-item>
+</swiper>
+
+<!-- 九宫格 -->
+<view class="sudoku">
+
+  <view bindtap="slipStore" data-type="{{item.name}}" data-id="{{index}}" wx:for="{{Sudoku}}" wx:key="{{index}}" class="sudoku-item">
+      <image src="{{item.icon}}" class="sudoku-image"></image>
+      <text class="sudoku-text">{{item.name}}</text>
+  
+  </view>
+</view>

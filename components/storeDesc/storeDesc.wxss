@@ -1,0 +1,19 @@
+/* components/storeDesc/storeDesc.wxss */
+.item-desc{
+    width: 100%;
+    height: 200rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+.item-nm{
+    font-size: 32rpx;
+    margin-bottom: 5rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-sc{
+    font-size: 26rpx;
+    margin-bottom: 5rpx;
+    color: rgb(110, 110, 110);
+}
